@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(rgba(217,216,217,0.7),rgba(197,160,167,0.8));
+    height:100vh;
+}
+.center,.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#click{
+    display:none;
+}
+.click-me{
+    display:block;
+    width:160px;
+    height:50px;
+    font-family:'Franklin Gothic Medium';
+    background:#E981A4;
+    border:3px solid #B47792;
+    color:white;
+    text-align:center;
+    font-size:22px;
+    line-height:50px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.5s;
+    box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.3);
+}
+.click-me:hover{
+    background:rgba(248,237,235,0.2);
+    color:#E981A4;
+}
+.content{
+    opacity:0;
+    visibility: hidden;
+    width: 480px;
+    height: 270px;
+    background:rgba(244,197,215);
+    border-radius:5px;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3);
+}
+#click:checked ~ .content{
+    opacity:1;
+    visibility: visible;
+}
+.header{
+    height:55px;
+    background: #E981A4;
+    overflow:hidden;
+    border-radius:3px 3px 0 0;
+    box-shadow:0 3px 3px 0 rgba(0,0,0,0.3);
+}
+.header h2{
+   font-family:"Play", sans-serif;
+   color :beige;
+   padding-left: 20px;
+   font-size:20px;
+}
+p{
+    font-family:"Kode Mono", monospace;
+    padding-top:7px;
+    font-size:20px;
+    font-weight:600;
+    color:rgba(0,0,0,0.8);
+    text-align:center;
+}
+h3{
+    font-family:"Kode Mono", monospace;
+    font-weight: 500;
+    text-align:right;
+    margin: auto;
+    margin-bottom: 1px;
+}
+.line{
+    position: absolute;
+    bottom:65px;
+    width:100%;
+    height:1.5px;
+    background:rgba(0,0,0,0.3);
+
+}
+.zenko{
+    position: absolute;
+    display:block;
+    bottom:15px;
+    width:100px;
+    height:30px;
+    right:40%;
+    font-family:"Kode Mono", monospace;
+    font-weight:600;
+    border: 3px solid #B47792;
+    border-radius: 3px;
+    box-shadow:0 3px 3px 0 rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.5);
+    padding: 10px,12px;
+    font-size:19px;
+    cursor:pointer;
+    text-align: center;
+}
+.zenko:hover{
+    background:rgba(248,237,235,0.5);
+    color:#E981A4;
+    transition:.5s;
+}
+.foot{
+    position: absolute;
+    bottom:10%;
+    left:70%;
+    margin: auto;
+}
+.name p{
+    margin:auto;
+    bottom:0;
+    top:50%;
+}
